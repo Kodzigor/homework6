@@ -29,3 +29,15 @@ const charIndexOf = (str, char) => {
 
 let res2 = charIndexOf('La-la-la, this is?', ',');
 console.log(res2);
+
+
+const cilinder = {
+    height: 12,
+    radius: 6,
+    get volume() {
+      return Math.round(Math.PI * (this.radius ** 2) * this.height);
+    },
+    get square() {
+      return Math.round(((2 * Math.PI) * (this.radius ** 2)) + ((2 * Math.PI) * this.radius * this.height));
+    }
+  };
