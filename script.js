@@ -6,7 +6,6 @@ const isCharPresent = (str, char) => {
         } else {
             return true;
         }
-
     }
     return false;
 };
@@ -22,7 +21,6 @@ const charIndexOf = (str, char) => {
         } else {
             return i;
         }
-
     }
     return -1;
 };
@@ -41,3 +39,35 @@ const cilinder = {
       return Math.round(((2 * Math.PI) * (this.radius ** 2)) + ((2 * Math.PI) * this.radius * this.height));
     }
   };
+
+console.log(cilinder.square);
+console.log(cilinder.volume);
+
+
+
+const getResult = (num1, num2, symb) => {
+    let res = 0;
+    switch(symb) {
+      case('+'):
+        res = num1 + num2;
+        break;
+      case ('-'):
+        res = num1 - num2;
+        break;
+      case ('*'):
+        res = num1 * num2;
+        break;
+      case ('/'):
+        res = num1 / num2;
+        break;
+      case ('**'):
+        res = num1 ** num2;
+        break;
+      case ('%'):
+        res = num1 % num2;
+        break;    
+    }
+        return res;
+  }
+  let res = getResult(9, 3, '-');
+  console.log(res);
